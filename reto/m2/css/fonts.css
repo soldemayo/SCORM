@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../fonts/OpenSans-ExtraBold-webfont.eot');
+    src: url('../fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-ExtraBold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-ExtraBold-webfont.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.light{
+  font-family: 'open_sanslight';
+}
+.regular{
+  font-family: 'open_sansregular';
+}
+.bold{
+  font-family: 'open_sansbold';
+}
+.extrabold{
+  font-family: 'open_sansextrabold';
+}
+
+
+
+
+.size_9{ font-size: 9px; }
+.size_10{ font-size: 10px; }
+.size_11{ font-size: 11px; }
+.size_12{ font-size: 12px; }
+.size_13{ font-size: 13px; }
+.size_14{ font-size: 14px; }
+.size_15{ font-size: 15px; }
+.size_16{ font-size: 16px; }
+.size_17{ font-size: 17px; }
+.size_18{ font-size: 18px; }
+.size_19{ font-size: 19px; }
+.size_20{ font-size: 20px; }
+.size_21{ font-size: 21px; }
+.size_22{ font-size: 22px; }
+.size_24{ font-size: 24px; }
+.size_26{ font-size: 26px; }
+.size_28{ font-size: 28px; }
+.size_30{ font-size: 30px; }
+.size_35{ font-size: 35px; }
+.size_40{ font-size: 40px; }
+.size_50{ font-size: 50px; }
+.size_60{ font-size: 60px; }
+.size_65{ font-size: 65px; }
+.size_70{ font-size: 70px; }
+.size_80{ font-size: 80px; }

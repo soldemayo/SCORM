@@ -1,0 +1,190 @@
+﻿<!doctype html>
+
+<html>
+	<head>
+
+		<meta charset="utf-8">
+	  	<title>Mapfre</title>
+	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  	<meta name="description" content="">
+	  	<meta name="author" content="">		
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	  	<!--[if lt IE 9]>
+	    	<script src="js/html5shiv.js"></script>
+	  	<![endif]-->
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/margenes.css">
+		<link rel="stylesheet" href="css/all.css">
+		<link rel="stylesheet" href="css/animaciones.css">
+		<link rel="stylesheet" href="css/circle.css">
+
+	</head>
+
+	<body>
+
+
+
+		<div id="contenedor" class="contenedor animated fadeIn delay_0_5">
+
+			<nav id="cabecera" class="cabecera">
+				<div id="titulo_cabecera" class="titulo_cabecera">Microchallenge | Monitoring and supervision</div>
+
+				<div id="puntuacion" class="puntuacion">0</div>
+				<div id="txt_puntos" class="txt_puntos">POINTS</div>
+				
+				<!--<button id="boton_cerrar" class="boton_cerrar" type="button">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</button>-->
+
+
+				<div id="cronometro" class="c100 p0 small">
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+				<div id="tiempo" class="tiempo">03:00</div>
+				
+				<div id="fondo_cabecera" class="fondo_cabecera">
+					<img src="images/cabecera.png" alt="">
+				</div>
+			</nav>
+
+
+
+			<div id="confirmacion_salir" class="confirmacion_salir animated fadeIn oculto">
+				<div class="light">Are you sure you want to quit the game?</div>
+				<div id="boton_confirmacion_si" class="boton_confirmacion" style="left:480px">YES</div>
+				<div id="boton_confirmacion_no" class="boton_confirmacion"style="right:480px">NO</div>
+			</div>
+
+
+
+			<div id="contenido" class="contenido animated fadeIn delay_0_2">
+				<div class="contenido_enunciado">
+					<!--<div class="titulo_1">JUEGO</div>
+					<div class="titulo_2">Tumores ginecológicos</div>-->
+					<p>As we have already seen, the objective of this module is to <span class="bold rojo">gain detailed knowledge of the results within the different recovery management processes and to verify the effectiveness of the handling,</span> in addition to gaining detailed knowledge of the most relevant indicators of the model.</p>
+					<p>We're sure it's all very clear to you, but can you solve this crossword puzzle? Click on each box and type the letters of the words defined below one by one.</p>
+					<p><span class="bold rojo">Every word that you get right will earn you 4 points. You have 3 minutes to complete this. Good luck!</span></p>
+				</div>
+
+
+				<div id="capa_anuladora" class="capa_anuladora">
+					<div id="boton_comenzar" class="boton_comenzar">
+						START
+					</div>
+
+					<div id="feedback" class="feedback animated zoomIn lenta delay_3 oculto">
+						<div class="gris_oscuro padding_30 size_50 blanco"><i class="far fa-thumbs-up"></i></div>
+						<div class="padding_30">
+							<div class="size_22 extrabold">You have earned <span id="nota">xx</span> points.</div>
+							<div class="paddingt_20 paddingb_20">You can now exit the game and continue the course.</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				
+				<div class="contenido_ejercicio">
+					
+					<div id="contenido_definiciones" class="pos_relativa paddingl_10">
+						<div class="letras" style="top:75px; left:120px;"><input tabindex="2" class="form-control" id="letra_1_1" maxlength="1" type="text"></div>
+						<div class="letras" style="top:110px; left:120px;"><input tabindex="3" class="form-control" id="letra_1_2" maxlength="1" type="text"></div>
+						<div class="letras" style="top:145px; left:120px;"><input tabindex="4" class="form-control" id="letra_1_3" maxlength="1" type="text"></div>
+						<div class="letras" style="top:180px; left:120px;"><input tabindex="5" class="form-control" id="letra_1_4" maxlength="1" type="text"></div>
+						<div class="letras" style="top:215px; left:120px;"><input tabindex="6" class="form-control" id="letra_1_5" maxlength="1" type="text"></div>
+						<div class="letras" style="top:250px; left:120px;"><input tabindex="7" class="form-control" id="letra_1_6" maxlength="1" type="text"></div>
+						<div class="letras" style="top:285px; left:120px;"><input tabindex="8" class="form-control" id="letra_1_7" maxlength="1" type="text"></div>
+						<div class="letras" style="top:320px; left:120px;"><input tabindex="9" class="form-control" id="letra_1_8" maxlength="1" type="text"></div>
+						<div class="letras" style="top:355px; left:120px;"><input tabindex="10" class="form-control" id="letra_1_9" maxlength="1" type="text"></div>
+						<div class="letras" style="top:390px; left:120px;"><input tabindex="11" class="form-control" id="letra_1_10" maxlength="1" type="text"></div>
+
+						<div class="letras" style="top:110px; left:330px;"><input tabindex="12" class="form-control" id="letra_2_1" maxlength="1" type="text"></div>
+						<div class="letras" style="top:145px; left:330px;"><input tabindex="12" class="form-control" id="letra_2_2" maxlength="1" type="text"></div>
+						<div class="letras" style="top:180px; left:330px;"><input tabindex="13" class="form-control" id="letra_2_3" maxlength="1" type="text"></div>
+						<div class="letras" style="top:215px; left:330px;"><input tabindex="14" class="form-control" id="letra_2_4" maxlength="1" type="text"></div>
+						<div class="letras" style="top:250px; left:330px;"><input tabindex="15" class="form-control" id="letra_2_5" maxlength="1" type="text"></div>
+						<div class="letras" style="top:285px; left:330px;"><input tabindex="16" class="form-control" id="letra_2_6" maxlength="1" type="text"></div>
+						<div class="letras" style="top:320px; left:330px;"><input tabindex="17" class="form-control" id="letra_2_7" maxlength="1" type="text"></div>
+						<div class="letras" style="top:355px; left:330px;"><input tabindex="18" class="form-control" id="letra_2_8" maxlength="1" type="text"></div>
+						<div class="letras" style="top:390px; left:330px;"><input tabindex="19" class="form-control" id="letra_2_9" maxlength="1" type="text"></div>
+						<div class="letras" style="top:425px; left:330px;"><input tabindex="20" class="form-control" id="letra_2_10" maxlength="1" type="text"></div>
+						<div class="letras" style="top:460px; left:330px;"><input tabindex="21" class="form-control" id="letra_2_11" maxlength="1" type="text"></div>
+						<div class="letras" style="top:495px; left:330px;"><input tabindex="22" class="form-control" id="letra_2_12" maxlength="1" type="text"></div>
+						<div class="letras" style="top:530px; left:330px;"><input tabindex="23" class="form-control" id="letra_2_13" maxlength="1" type="text"></div>
+
+
+
+						<div class="letras" style="top:320px; left:155px;"><input tabindex="24" class="form-control" id="letra_3_1" maxlength="1" type="text"></div>
+						<div class="letras" style="top:320px; left:190px;"><input tabindex="25" class="form-control" id="letra_3_2" maxlength="1" type="text"></div>
+						<div class="letras" style="top:320px; left:225px;"><input tabindex="26" class="form-control" id="letra_3_3" maxlength="1" type="text"></div>
+						<div class="letras" style="top:320px; left:260px;"><input tabindex="27" class="form-control" id="letra_3_4" maxlength="1" type="text"></div>
+						<div class="letras" style="top:320px; left:295px;"><input tabindex="28" class="form-control" id="letra_3_5" maxlength="1" type="text"></div>
+						<div class="letras" style="top:320px; left:365px;"><input tabindex="29" class="form-control" id="letra_3_6" maxlength="1" type="text"></div>
+						<div class="letras" style="top:320px; left:400px;"><input tabindex="30" class="form-control" id="letra_3_7" maxlength="1" type="text"></div>
+						<div class="letras" style="top:320px; left:435px;"><input tabindex="31" class="form-control" id="letra_3_8" maxlength="1" type="text"></div>
+
+
+						<div class="letras" style="top:460px; left:120px;"><input tabindex="32" class="form-control" id="letra_4_1" maxlength="1" type="text"></div>
+						<div class="letras" style="top:460px; left:155px;"><input tabindex="33" class="form-control" id="letra_4_2" maxlength="1" type="text"></div>
+						<div class="letras" style="top:460px; left:190px;"><input tabindex="34" class="form-control" id="letra_4_3" maxlength="1" type="text"></div>
+						<div class="letras" style="top:460px; left:225px;"><input tabindex="35" class="form-control" id="letra_4_4" maxlength="1" type="text"></div>
+						<div class="letras" style="top:460px; left:260px;"><input tabindex="36" class="form-control" id="letra_4_5" maxlength="1" type="text"></div>
+						<div class="letras" style="top:460px; left:295px;"><input tabindex="37" class="form-control" id="letra_4_6" maxlength="1" type="text"></div>						
+						<div class="letras" style="top:460px; left:365px;"><input tabindex="38" class="form-control" id="letra_4_7" maxlength="1" type="text"></div>
+						<div class="letras" style="top:460px; left:400px;"><input tabindex="39" class="form-control" id="letra_4_8" maxlength="1" type="text"></div>
+						<div class="letras" style="top:460px; left:435px;"><input tabindex="40" class="form-control" id="letra_4_9" maxlength="1" type="text"></div>
+
+
+						<img id="num_1" src="images/num_1.jpg" alt="" class="pos_absoluta nivel_3" style="top:30px; left:120px;">
+						<img id="num_2" src="images/num_2.jpg" alt="" class="pos_absoluta nivel_3" style="top:65px; left:330px;">
+						<img id="num_3" src="images/num_3.jpg" alt="" class="pos_absoluta nivel_3" style="top:320px; left:75px;">
+						<img id="num_4" src="images/num_4.jpg" alt="" class="pos_absoluta nivel_3" style="top:460px; left:75px;">
+					</div>
+
+					<div id="definiciones" class="definiciones size_16">
+						<p class="bold verde ">DOWN <i class="fa fa-long-arrow-down paddingl_10"></i></p>
+						<p>1. Action plans include a description and analysis of the causes of _______________.</p>
+						<p>2. If we refer to the number of successful recoveries divided by the total recoveries declared or processed during the same period, we are talking about the ______________ of the recovery.</p>
+
+						
+						<p class="bold verde paddingt_20">ACROSS <i class="fa fa-long-arrow-right paddingl_10"></i></p>
+						<p>3. The indicators make it possible to measure the degree of achievement of the _______________ pursued.</p>
+						<p>4. If we refer to the net amount recovered on recovery case files divided by the total amount incurred on case files associated with the recovery case files processed during the same period, we are talking about the _______________ of the recovery.</p>	
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+
+
+	</body>
+
+
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/anime.min.js"></script>
+	<script type="text/javascript" src="js/soundjs-0.6.2.min.js"></script>
+	<script type="text/javascript" src="js/palabras.js"></script>
+	<!--<script type="text/javascript" src="js/control.js"></script>-->
+	<script type="text/javascript" src="js/funciones.js"></script>
+
+
+
+</html>

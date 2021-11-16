@@ -1,0 +1,12 @@
+
+var palabras = '{ "textos" : [' +
+'{},'+
+'{ "inicial":"A",	"enunciado":"Starts with A",	"pregunta":"What should the capture of this type of case file preferably be?", "solucion_1":"AUTOMATIC", "solucion_2":"AUTOMATIC", "solucion_3":"AUTOMATIC", "solucion_4":"AUTOMATIC"},' +
+'{ "inicial":"E",	"enunciado":"Starts with E",	"pregunta":"The amount at which the case file is assessed, based on the amount paid in the payment case file _________ of Recovery.", "solucion_1":"EXPECTATION", "solucion_2":"EXPECTATION", "solucion_3":"EXPECTATION", "solucion_4":"EXPECTATION"},' +
+'{ "inicial":"G",	"enunciado":"Contains the letter G",	"pregunta":"Agreements that can be established at the sector, bilateral or multilateral level between insurance companies.", "solucion_1":"AGREEMENTS", "solucion_2":"AGREEMENTS", "solucion_3":"AGREEMENTS", "solucion_4":"AGREEMENTS"},' +
+'{ "inicial":"I",	"enunciado":"Contains the letter L",	"pregunta":"In the transactional system, automatically enter the collection in the correct case file and to the necessary items.", "solucion_1":"ALLOCATE", "solucion_2":"ALLOCATE", "solucion_3":"ALLOCATE", "solucion_4":"ALLOCATE"},' +
+'{ "inicial":"R",	"enunciado":"Starts with R",	"pregunta":"Amount to consider and to cover possible expenses that may arise during the processing of a claim.", "solucion_1":"RESERVE", "solucion_2":"RESERVE", "solucion_3":"RESERVE", "solucion_4":"RESERVE"},' +
+'{ "inicial":"S",	"enunciado":"Starts with S",	"pregunta":"Activity where the insurer takes the place of the policyholder in the exercise of those initiatives or rights that the policyholder would have in respect of the third parties that caused the accident or claim.", "solucion_1":"SUBROGATION", "solucion_2":"SUBROGATION", "solucion_3":"SUBROGATION", "solucion_4":"SUBROGATION"},' +
+'{ "inicial":"T",	"enunciado":"Starts with T",	"pregunta":"The person or company responsible for the incident in respect of which the claim is filed. (Two words).", "solucion_1":"THIRD PARTY", "solucion_2":"THIRD PARTY", "solucion_3":"THIRD PARTY", "solucion_4":"THIRD PARTY"},' +
+'{ "inicial":"V",	"enunciado":"Starts with V",	"pregunta":"This is the perspective that takes into account the quality offered to customers and the commitments made to them during the resolution of recovery case files: _________ Client", "solucion_1":"VISION", "solucion_2":"VISION", "solucion_3":"VISION", "solucion_4":"VISION"}]}';	
+

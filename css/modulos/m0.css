@@ -1,0 +1,123 @@
+/*/////////////////// M0 P1 ///////////////////*/
+.p1 #v-pills-tab p {
+	margin-bottom: 40px;
+	border: 5px solid #FFF;
+	border-radius: 5px;
+	padding: 20px;
+	box-shadow: 0px 0px 0px 5px;
+	background-color: #DFDFDF;
+	margin-top: 35px;
+}
+.p1 #v-pills-tab p::after {
+    font-family: 'icomoon';
+    content: '\e905';
+    color: #737373;
+    position: absolute;
+    transform: rotate(90deg);
+    margin-top: 65px;
+    margin-left: -66px;
+    font-size: 40px;
+}
+/*/////////////////// M0 P2 ///////////////////*/
+
+
+.itemVertical{
+	text-align: center;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.40);
+	border-radius: 20px;
+	height: 400px;
+	margin: 10px;
+	border: 5px solid #FFF;
+	margin-top: 150px;
+	width: 12%;
+	background-color: #DFDFDF;
+	position: relative;
+}
+.itemVertical .circulo{
+	font-family: calibri, sans-serif;
+	color: #FFF;
+	font-size: 70px;
+	font-weight: 700;
+	border-radius: 100%;
+	width: 140px;
+	height: 140px;
+	padding-top: 18px;
+	border: 5px solid #FFF;
+	box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.2);
+	position: absolute;
+	margin-top: -75px;
+	margin-left: 39px;
+	background-color: #DFDFDF;
+}
+.itemVertical p{
+	background-color: #FFF;
+	border-radius: 10px;
+	margin: 7px;
+	padding: 20px;
+	height: 83%;
+	padding-top: 85px;
+	text-align: center;
+	letter-spacing: -0.01em;
+}
+
+
+.deg1::before, .deg2::before, .deg3::before, .deg4::before, .deg5::before, .deg6::before, .deg7::before{
+	content: " ";
+	border-radius: 10px;
+	position: absolute;
+	width: 202px;
+	height: 325px;
+	margin-top: 7px;
+	background-color: transparent;
+	z-index: 0;
+	display: flex;
+	margin-left: 7px;
+}
+.deg1::before{
+	border: 2px solid yellowgreen;
+}
+.deg1 .circulo{
+	color: yellowgreen;
+}
+
+.deg2::before{
+	border: 2px solid orangered;
+}
+.deg2 .circulo{
+	color: orangered;
+}
+
+.deg3::before{
+	border: 2px solid purple;
+}
+.deg3 .circulo{
+	color: purple;
+}
+
+.deg4::before{
+	border: 2px solid #ffc107;
+}
+.deg4 .circulo{
+	color: #ffc107;
+}
+.deg5::before{
+	border: 2px solid #00b8ff;
+}
+.deg5 .circulo{
+	color: #00b8ff;
+}
+
+.deg6::before{
+	border: 2px solid #ff00f7;
+}
+.deg6 .circulo{
+	color: #ff00f7;
+}
+
+.deg7::before{
+	border: 2px solid #004C83;
+}
+.deg7 .circulo{
+	color: #004C83;
+}
+

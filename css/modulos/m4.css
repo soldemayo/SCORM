@@ -1,0 +1,164 @@
+/*/////////////////// M4 P1 ///////////////////*/
+
+.p1 ul{
+	
+}
+.p1 ul li{
+}
+.p1 ul li span{
+	margin-left: 10px;
+}
+
+.p1 img{
+	
+}
+
+/*/////////////////// M4 P2 ///////////////////*/
+
+.p2 .pointerNo{
+	pointer-events: none !important;
+}
+.contNivel2 .elementoHover{
+	width: 250px;
+	height: 250px;
+	/* overflow: inherit; */
+	margin-top: 40px;
+	margin-bottom: 120px;
+}
+.contNivel2 .elementoHover::after{
+	font-family: 'icomoon' !important;
+	content: '\e905';
+}
+.contNivel2 .elementoHover .top, .contNivel2 .elementoHover .back{
+	padding: 20px;
+}
+.contNivel2 .elementoHover .top{
+}
+.contNivel2 .elementoHover:hover > .top{
+}
+.contNivel2 .elementoHover img{
+	width: 70%;
+	margin-bottom: 20px;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+.contNivel2 .elementoHover p{
+	font-size: 26px;
+}
+.contNivel2 .elementoHover i{width: 100%;float: left;}
+.contNivel2 .elementoHover i::before{
+	font-size: 45px;
+}
+.contNivel2 .elementoHover .back{
+}
+.contNivel2 .elementoHover .back p{
+	margin-top: 50px;
+	font-weight: 700;
+}
+
+.p2 .img3{
+	width: 56% !important;
+}
+.p2 .p3{
+	letter-spacing: -1px;
+	margin-left: -10px !important;
+}
+/*/////////////////// M4 P3 ///////////////////*/
+.contp3{
+	}
+.contp3 .imgp3{
+	width: 100%;
+	margin-top: 55px;
+	}
+.flecha1{
+	width: 730px;
+	z-index: 100;
+}
+.flecha1 img{
+	
+}
+.flecha1 p{
+	width: 29%;
+	text-align: center;
+	margin-left: 330px;
+	margin-top: 235px;
+	color: #FFF;
+}
+.flecha1 img, .flecha2 img{
+	width: 100%;
+}
+.flecha1 p, .flecha2 p{
+	position: absolute;
+}
+.flecha2{
+	width: 730px;
+	z-index: 100;
+	margin-left: 550px;
+}
+.flecha2 img{
+	
+}
+.flecha2 p{
+	text-align: center;
+	width: 26%;
+	margin-left: 341px;
+	margin-top: 207px;
+}
+
+.caja1, .caja2{
+	background-color: #DFDFDF;
+	padding: 20px;
+	width: 500px;
+	z-index: 100;
+	right: 90px;
+	color: #737373;
+	box-shadow: 0px 10px 10px 0px rgb(0 0 0 / 50%);
+	border-left: 5px #D81E05 solid;
+}
+
+.caja1 p, .caja2 p{
+	
+}
+
+.caja1{
+	margin-top: 112px;
+}
+
+.caja2{
+	margin-top: 341px;
+}
+
+/*/////////////////// M4 P4 ///////////////////*/
+
+
+.p4 ul{
+	text-align: left;
+	margin: 0;
+}
+.p4 ul li{
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 20px;
+}
+.p4 ul li i{
+	line-height: 0;
+	margin-right: 10px;
+	font-size: 30px;
+}
+.p4 ul li span{
+
+}
+.p4 ul li a{
+	color: #D81E05;
+	font-weight: 700;
+}
+.p4 ul li a.visto{
+	color: #A9CB02;
+}
+.p4 ul li a:hover{
+	color: #737373 !important;
+}

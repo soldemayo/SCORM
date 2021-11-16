@@ -1,0 +1,250 @@
+﻿<!doctype html>
+
+<html>
+	<head>
+
+		<meta charset="utf-8">
+	  	<title>Mapfre</title>
+	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  	<meta name="description" content="">
+	  	<meta name="author" content="">		
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	  	<!--[if lt IE 9]>
+	    	<script src="js/html5shiv.js"></script>
+	  	<![endif]-->
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/margenes.css">
+		<link rel="stylesheet" href="css/all.css">
+		<link rel="stylesheet" href="css/animaciones.css">
+		<link rel="stylesheet" href="css/circle.css">
+
+	</head>
+
+	<body>
+
+
+
+		<div id="contenedor" class="contenedor animated fadeIn delay_0_5">
+
+
+			<nav id="cabecera" class="cabecera">
+				
+				<div id="titulo" class="titulo">Microchallenge | Structure and organization</div>
+
+				<div id="puntuacion" class="puntuacion">0</div>
+				<div id="txt_puntos" class="txt_puntos">POINTS</div>
+				
+				<!--<button id="boton_cerrar" class="boton_cerrar" type="button">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</button>-->
+
+
+				<div id="cronometro" class="c100 p0 small">
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+				<div id="tiempo" class="tiempo">02:00</div>
+				
+				<div id="fondo_cabecera" class="fondo_cabecera">
+					<img src="images/cabecera.png" alt="">
+				</div>
+			</nav>
+
+
+			
+
+			<div id="confirmacion_salir" class="confirmacion_salir animated fadeIn oculto">
+				<div class="light">Are you sure you want to quit the game?</div>
+				<div id="boton_confirmacion_si" class="boton_confirmacion" style="left:480px">YES</div>
+				<div id="boton_confirmacion_no" class="boton_confirmacion"style="right:480px">NO</div>
+			</div>
+
+
+			
+		
+
+			<div id="contenido" class="contenido animated fadeIn delay_0_2">
+				<div class="contenido_enunciado">
+					<!--<div class="titulo_1">JUEGO</div>
+					<div class="titulo_2">Cáncer de próstata</div>-->
+					<p>This Microchallenge consists of finding the match among the 12 cards. In this case, the 6 areas with which the Claims Area associates in the management of recovery case files, and the most important function(s) of each Area, are presented. Your goal is to find the <span class="bold rojo">Area and match it with its corresponding functions.</span></p>
+					<p>To do this, <span class="bold rojo">click on each card until you find the match we are looking for.</span> But careful, if you don't complete this before the time runs out, you'll earn 0 points. <br><span class="bold rojo">You have 2 minutes. Get going!</span></p>
+				</div>
+
+
+				<div id="capa_anuladora" class="capa_anuladora">
+					<div id="boton_comenzar" class="boton_comenzar">
+						START
+					</div>
+
+					<div id="feedback" class="feedback animated zoomIn lenta delay_3 oculto">
+						<div class="gris_oscuro padding_30 size_50 blanco"><i class="far fa-thumbs-up"></i></div>
+						<div class="padding_30">
+							<div class="size_22 extrabold">You have earned <span id="nota">xx</span> points.</div>
+							<div class="paddingt_20 paddingb_20">You can now exit the game and continue the course.</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="contenido_ejercicio">
+					<div class="col-xs-3 text-center sin_padding margint_5">
+						<div id="carta_1" class="carta flip-container paddingl_5">
+							<div class="flipper">
+								<div class="front">
+									<img src="images/carta_reves.png" alt="">
+								</div>
+								<div id="reverso_1" class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-3 text-center sin_padding margint_5">
+						<div id="carta_2" class="carta flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="images/carta_reves.png" alt="">
+								</div>
+								<div id="reverso_2" class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-3 text-center sin_padding margint_5">
+						<div id="carta_3" class="carta flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="images/carta_reves.png" alt="">
+								</div>
+								<div id="reverso_3" class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-3 text-center sin_padding margint_5">
+						<div id="carta_4" class="carta flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="images/carta_reves.png" alt="">
+								</div>
+								<div id="reverso_4" class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+
+					<div class="col-xs-3 text-center sin_padding margint_5">
+						<div id="carta_5" class="carta flip-container paddingl_5">
+							<div class="flipper">
+								<div class="front">
+									<img src="images/carta_reves.png" alt="">
+								</div>
+								<div id="reverso_5" class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-3 text-center sin_padding margint_5">
+						<div id="carta_6" class="carta flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="images/carta_reves.png" alt="">
+								</div>
+								<div id="reverso_6" class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-3 text-center sin_padding margint_5">
+						<div id="carta_7" class="carta flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="images/carta_reves.png" alt="">
+								</div>
+								<div id="reverso_7" class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-3 text-center sin_padding margint_5">
+						<div id="carta_8" class="carta flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="images/carta_reves.png" alt="">
+								</div>
+								<div id="reverso_8" class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+
+					<div class="col-xs-3 text-center sin_padding margint_5">
+						<div id="carta_9" class="carta flip-container paddingl_5">
+							<div class="flipper">
+								<div class="front">
+									<img src="images/carta_reves.png" alt="">
+								</div>
+								<div id="reverso_9" class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-3 text-center sin_padding margint_5">
+						<div id="carta_10" class="carta flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="images/carta_reves.png" alt="">
+								</div>
+								<div id="reverso_10" class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-3 text-center sin_padding margint_5">
+						<div id="carta_11" class="carta flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="images/carta_reves.png" alt="">
+								</div>
+								<div id="reverso_11" class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-3 text-center sin_padding margint_5">
+						<div id="carta_12" class="carta flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="images/carta_reves.png" alt="">
+								</div>
+								<div id="reverso_12" class="back"></div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+
+				</div>
+			</div>
+
+
+	
+		</div>
+
+
+	</body>
+
+
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/anime.min.js"></script>
+	<script type="text/javascript" src="js/soundjs-0.6.2.min.js"></script>
+	<!--<script type="text/javascript" src="js/control.js"></script>-->
+	<script type="text/javascript" src="js/funciones.js"></script>
+
+
+
+</html>

@@ -1,0 +1,248 @@
+﻿<!doctype html>
+
+<html>
+	<head>
+
+		<meta charset="utf-8">
+	  	<title>Mapfre</title>
+	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  	<meta name="description" content="">
+	  	<meta name="author" content="">		
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	  	<!--[if lt IE 9]>
+	    	<script src="js/html5shiv.js"></script>
+	  	<![endif]-->
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/margenes.css">
+		<link rel="stylesheet" href="css/all.css">
+		<link rel="stylesheet" href="css/animaciones.css">
+		<link rel="stylesheet" href="css/circle.css">
+
+	</head>
+
+	<body>
+
+
+
+		<div id="contenedor" class="contenedor animated fadeIn delay_0_5">
+
+
+			<nav id="cabecera" class="cabecera">
+				<div id="titulo" class="titulo">Microchallenge | Processes</div>
+
+				<div id="puntuacion" class="puntuacion">0</div>
+				<div id="txt_puntos" class="txt_puntos">POINTS</div>
+				
+				<!--<button id="boton_cerrar" class="boton_cerrar" type="button">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</button>-->
+
+				
+				<div id="fondo_cabecera" class="fondo_cabecera">
+					<img src="images/cabecera.png" alt="">
+				</div>
+			</nav>
+
+
+			
+
+			<div id="confirmacion_salir" class="confirmacion_salir animated fadeIn oculto">
+				<div class="light">Are you sure you want to quit the game?</div>
+				<div id="boton_confirmacion_si" class="boton_confirmacion" style="left:480px">YES</div>
+				<div id="boton_confirmacion_no" class="boton_confirmacion"style="right:480px">NO</div>
+			</div>
+
+
+			
+			
+
+			<div id="contenido" class="contenido animated fadeIn delay_0_2">
+				<div class="contenido_enunciado">
+					<!--<div class="titulo_1">JUEGO</div>
+					<div class="titulo_2">Los ensayos clínicos TOPARP</div>-->
+
+					<div id="enunciado_1">
+						<p>We have seen the content on  <span class="bold rojo">Processes in Recovery Management.</span> To prove that you have been attentive and that everything is clear to you, we're going to play a game in which you will have to click on a word and then click on the blank where you think it should be located. The elements will position themselves.</p>
+						<p><span class="bold rojo">When you are sure of your answers, click on "Check." Once you check your answers, you will not be able to correct them. You will have to move on. <br>Let's get started!</span></p>
+					</div>
+				</div>
+
+				<div id="capa_anuladora" class="capa_anuladora">
+					<div id="boton_comenzar" class="boton_comenzar">
+						START
+					</div>
+
+					<div id="feedback" class="feedback animated zoomIn lenta oculto">
+						<div class="gris_oscuro padding_30 size_50 blanco"><i class="far fa-thumbs-up"></i></div>
+						<div class="padding_30">
+							<div class="size_22 extrabold">You have earned <span id="nota">xx</span> points.</div>
+							<div class="paddingt_20 paddingb_20">You can now exit the game and continue the course.</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="anulador" class="pos_absoluta oculto" style="z-index:5; width:100%; height:440px; left:0px; top:0px;"></div>
+
+
+
+				
+				<div id="contenido_ejercicio_1" class="contenido_ejercicio">
+					<div id="textos_ejericio" class="textos_ejericio" style="padding-left:15px; padding-right:0px;">
+						<div class="size_20 paddingt_30">In relation to the capture and opening of recovery case files.</div>		
+						<div class="paddingt_30 size_20" style="line-height:1.9;">
+							The process encompasses the set of actions aimed at <span style="margin-left:210px;"></span> and <br><span style="margin-left:210px;"></span> information related to a potential <span style="margin-left:210px;"></span>.							
+						</div>			
+					</div>
+
+					<div id="zona_1_1" class="boton_zona" style="top:135px; left:528px; width:200px;"></div>
+					<div id="zona_1_2" class="boton_zona" style="top:173px; left:25px; width:200px;"></div>
+					<div id="zona_1_3" class="boton_zona" style="top:173px; left:555px; width:200px;"></div>
+
+
+					<div id="etiq_1_1" class="boton_etiqueta" style="top:395px; left:60px; width:200px;">recording</div>
+					<div id="etiq_1_2" class="boton_etiqueta" style="top:395px; left:335px; width:200px;">recovery</div>
+					<div id="etiq_1_3" class="boton_etiqueta" style="top:395px; left:605px; width:200px;">obtaining</div>
+					<div class="fondo_drags"></div>
+				</div>
+
+
+
+				<div id="contenido_ejercicio_2" class="contenido_ejercicio animated fadeIn oculto">
+					<div id="textos_ejericio" class="textos_ejericio" style="padding-left:15px; padding-right:0px;">
+						<div class="size_20 paddingt_30">In relation to the <span class="extrabold">handling of agreement recovery case files.</span></div>		
+						<div class="paddingt_30 size_20" style="line-height:1.9;">
+							The <span style="margin-left:230px;"></span> recovery handling process comprises the activities to <br><span class="extrabold">validate, through</span> <span style="margin-left:230px;"></span> that can be established at the <br><span style="margin-left:230px;"></span>, bilateral or multilateral level between insurance companies, whether or not the recovery case files are appropriate.
+						</div>			
+					</div>
+
+					<div id="zona_2_1" class="boton_zona" style="top:134px; left:67px; width:220px;"></div>
+					<div id="zona_2_2" class="boton_zona" style="top:172px; left:212px; width:220px;"></div>
+					<div id="zona_2_3" class="boton_zona" style="top:210px; left:25px; width:220px;"></div>
+
+
+					<div id="etiq_2_1" class="boton_etiqueta" style="top:395px; left:60px; width:220px;">agreements</div>
+					<div id="etiq_2_2" class="boton_etiqueta" style="top:395px; left:335px; width:220px;">agreement</div>
+					<div id="etiq_2_3" class="boton_etiqueta" style="top:395px; left:605px; width:220px;">sector</div>
+					<div class="fondo_drags"></div>
+				</div>
+
+
+
+				<div id="contenido_ejercicio_3" class="contenido_ejercicio animated fadeIn oculto">
+					<div id="textos_ejericio" class="textos_ejericio" style="padding-left:15px; padding-right:0px;">
+						<div class="size_20 paddingt_20">In relation to the <span class="extrabold">handling of conventional recovery case files.</span></div>		
+						<div class="paddingt_30 size_20" style="line-height:1.9;">
+							The conventional recovery handling process comprises the activities to <br> <span style="margin-left:230px;"></span> whether the conventional recovery case file is appropriate and <br>to <span class="extrabold">begin its management</span> in order for MAPFRE to recover the <span style="margin-left:230px;"></span> <br>that it has previously paid to its <span style="margin-left:230px;"></span> under the current policy and <br>that it <span style="margin-left:230px;"></span> from the third party <span style="margin-left:230px;"></span> for an <br>accident or claim (or from its insurer).
+						</div>			
+					</div>
+
+					<div id="zona_3_1" class="boton_zona" style="top:163px; left:25px; width:220px;"></div>
+					<div id="zona_3_2" class="boton_zona" style="top:202px; left:619px; width:220px;"></div>
+					<div id="zona_3_3" class="boton_zona" style="top:240px; left:322px; width:220px;"></div>
+					<div id="zona_3_4" class="boton_zona" style="top:278px; left:87px; width:220px;"></div>
+					<div id="zona_3_5" class="boton_zona" style="top:278px; left:506px; width:220px;"></div>
+
+
+					<div id="etiq_3_1" class="boton_etiqueta" style="top:400px; left:40px; width:220px;">validate</div>
+					<div id="etiq_3_2" class="boton_etiqueta" style="top:400px; left:325px; width:220px;">policyholder</div>
+					<div id="etiq_3_3" class="boton_etiqueta" style="top:400px; left:605px; width:220px;">amount</div>
+					<div id="etiq_3_4" class="boton_etiqueta" style="top:460px; left:180px; width:220px;">responsible</div>
+					<div id="etiq_3_5" class="boton_etiqueta" style="top:460px; left:470px; width:220px;">recovers</div>
+					<div class="fondo_drags" style="top:385px;"></div>
+				</div>
+
+
+
+				<div id="contenido_ejercicio_4" class="contenido_ejercicio animated fadeIn oculto">
+					<div id="textos_ejericio" class="textos_ejericio" style="padding-left:15px; padding-right:0px;">
+						<div class="size_20 paddingt_20">In relation to the handling of recovery case files.</div>		
+						<div class="paddingt_30 size_20" style="line-height:1.9;">
+							We talk about the processing of a <span style="margin-left:230px;"></span> recovery case file when the <br> process includes activities to <span style="margin-left:230px;"></span>, from the <span style="margin-left:230px;"></span>, <br>what was previously <span style="margin-left:230px;"></span> to the injured party in the cases determined <br>by law or as the result of an agreement between the parties. This type of case file is linked <br>to <span style="margin-left:230px;"></span>.							
+						</div>			
+					</div>
+
+					<div id="zona_4_1" class="boton_zona" style="top:125px; left:342px; width:220px;"></div>
+					<div id="zona_4_2" class="boton_zona" style="top:163px; left:298px; width:220px;"></div>
+					<div id="zona_4_3" class="boton_zona" style="top:163px; left:623px; width:220px;"></div>
+					<div id="zona_4_4" class="boton_zona" style="top:201px; left:220px; width:220px;"></div>
+					<div id="zona_4_5" class="boton_zona" style="top:278px; left:52px; width:220px;"></div>
+
+
+					<div id="etiq_4_1" class="boton_etiqueta" style="top:400px; left:40px; width:220px;">local legislation</div>
+					<div id="etiq_4_2" class="boton_etiqueta" style="top:400px; left:325px; width:220px;">paid</div>
+					<div id="etiq_4_3" class="boton_etiqueta" style="top:400px; left:605px; width:220px;">policyholder</div>
+					<div id="etiq_4_4" class="boton_etiqueta" style="top:460px; left:180px; width:220px;">recover</div>
+					<div id="etiq_4_5" class="boton_etiqueta" style="top:460px; left:470px; width:220px;">recourse</div>
+					<div class="fondo_drags" style="top:385px;"></div>
+				</div>
+
+
+
+				<div id="contenido_ejercicio_5" class="contenido_ejercicio animated fadeIn oculto">
+					<div id="textos_ejericio" class="textos_ejericio" style="padding-left:15px; padding-right:0px;">
+						<div class="size_20 paddingt_30">In relation to the Tool Features.</div>		
+						<div class="paddingt_30 size_20" style="line-height:1.9;">
+							We can say that one of the most important <span style="margin-left:210px;"></span> for recovery <br><span style="margin-left:210px;"></span> is the <span style="margin-left:210px;"></span> incorporation of the <br><span style="margin-left:210px;"></span>.							
+						</div>			
+					</div>
+
+					<div id="zona_5_1" class="boton_zona" style="top:135px; left:430px; width:200px;"></div>
+					<div id="zona_5_2" class="boton_zona" style="top:172px; left:25px; width:200px;"></div>
+					<div id="zona_5_3" class="boton_zona" style="top:172px; left:292px; width:200px;"></div>
+					<div id="zona_5_4" class="boton_zona" style="top:210px; left:25px; width:200px;"></div>
+
+
+					<div id="etiq_5_1" class="boton_etiqueta" style="top:398px; left:25px; width:200px;">features</div>
+					<div id="etiq_5_2" class="boton_etiqueta" style="top:398px; left:239px; width:200px;">claims handling plan</div>
+					<div id="etiq_5_3" class="boton_etiqueta" style="top:398px; left:452px; width:200px;">management</div>
+					<div id="etiq_5_4" class="boton_etiqueta" style="top:398px; left:664px; width:200px;">automatic</div>
+					<div class="fondo_drags"></div>
+				</div>
+
+
+
+
+
+				<div id="boton_comprobar" class="boton_idiomas oculto" style="top: 520px; left:620px">
+					CHECK
+				</div>
+
+				<div id="boton_comprobar_off" class="boton_idiomas_off" style="top: 520px; left:620px">
+					CHECK
+				</div>
+				
+				<div id="boton_siguiente" class="boton_idiomas animated zoomIn lenta oculto" style="top:520px; left:620px">
+					NEXT
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+	</body>
+
+
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/anime.min.js"></script>
+	<script type="text/javascript" src="js/soundjs-0.6.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.touch-punch.js"></script>
+	<!--<script type="text/javascript" src="js/control.js"></script>-->
+	<script type="text/javascript" src="js/funciones.js"></script>
+
+
+
+</html>

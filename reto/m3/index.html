@@ -1,0 +1,360 @@
+﻿<!doctype html>
+
+<html>
+	<head>
+
+		<meta charset="utf-8">
+	  	<title>Mapfre</title>
+	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  	<meta name="description" content="">
+	  	<meta name="author" content="">		
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	  	<!--[if lt IE 9]>
+	    	<script src="js/html5shiv.js"></script>
+	  	<![endif]-->
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/margenes.css">
+		<link rel="stylesheet" href="css/all.css">
+		<link rel="stylesheet" href="css/animaciones.css">
+		<link rel="stylesheet" href="css/circle.css">
+
+	</head>
+
+	<body>
+
+
+
+		<div id="contenedor" class="contenedor animated fadeIn delay_0_5">
+
+
+			<nav id="cabecera" class="cabecera">
+				<div id="titulo_cabecera" class="titulo_cabecera">Microchallenge  | Procedure </div>
+				
+				<div id="puntuacion" class="puntuacion">0</div>
+				<div id="txt_puntos" class="txt_puntos">POINTS</div>
+				
+				<!--<button id="boton_cerrar" class="boton_cerrar" type="button">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</button>-->
+
+
+				<div id="cronometro" class="c100 p0 small">
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+				<div id="tiempo" class="tiempo">02:30</div>
+				
+				<div id="fondo_cabecera" class="fondo_cabecera">
+					<img src="images/cabecera.png" alt="">
+				</div>
+			</nav>
+
+
+			
+
+			<div id="confirmacion_salir" class="confirmacion_salir animated fadeIn oculto">
+				<div class="light">Are you sure you want to quit the game?</div>
+				<div id="boton_confirmacion_si" class="boton_confirmacion" style="left:480px">YES</div>
+				<div id="boton_confirmacion_no" class="boton_confirmacion"style="right:480px">NO</div>
+			</div>
+
+
+
+
+			<div id="contenido" class="contenido animated fadeIn delay_0_2">
+				<div class="contenido_enunciado">
+					<!--<div class="titulo_1">JUEGO</div>
+					<div class="titulo_2">Cáncer de próstata</div>-->
+					<p>If you have paid attention to the PROCEDURE topic, you will have no problem solving our own Alphabet Game... Carefully read the definitions that appear, and particularly the KEY LETTER! In the space, write the word or words that you think meet each definition and click <span class="bold rojo">Check</span>.</p>
+					<p><span class="bold rojo">Your score will depend on how many correct answers you get. Each correct answer will give you 4 points. You have two and a half minutes to complete this.</span></p>
+				</div>
+
+
+				<div id="capa_anuladora" class="capa_anuladora">
+					<div id="boton_comenzar" class="boton_comenzar">
+						START
+					</div>
+
+					<div id="feedback" class="feedback animated zoomIn lenta delay_3 oculto">
+						<div class="gris_oscuro padding_30 size_50 blanco"><i class="far fa-thumbs-up"></i></div>
+						<div class="padding_30">
+							<div class="size_22 extrabold">You have earned <span id="nota">xx</span> points.</div>
+							<div class="paddingt_20 paddingb_20">You can now exit the game and continue the course.</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				
+				<div class="contenido_ejercicio">
+					
+					<div id="contenido_definiciones" class="contenido_definiciones oculto">
+						<div id="titulo" class="titulo"></div>
+						<div id="pregunta" class="pregunta"></div>
+						<div id="respuesta" class="respuesta"><input tabindex="1" name="txtRespuesta" class="form-control text-center" id="txtRespuesta" maxlength="60" type="text"></div>
+
+						<div class="col-xs-6 margint_30"><div id="boton_pasapalabra" class="boton_naranja">Pass</div></div>
+						<div class="col-xs-6 margint_30"><div id="boton_comprobar" class="boton_verde">Check</div></div>
+						<div class="clear"></div>
+					</div>
+
+					<div id="letra_A" class="boton_letra" style="top:20px; left:337px;">
+						<div class="txt_letra">A</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_A_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_A_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_A_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_A_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_A_incorrecta">
+					</div>
+
+					<div id="letra_B" class="boton_letra" style="top:26px; left:402px;">
+						<div class="txt_letra">B</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_B_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_B_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_B_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_B_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_B_incorrecta">
+					</div>
+
+					<div id="letra_C" class="boton_letra" style="top:50px; left:462px;">
+						<div class="txt_letra">C</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_C_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_C_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_C_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_C_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_C_incorrecta">
+					</div>
+
+					<div id="letra_D" class="boton_letra" style="top:86px; left:515px;">
+						<div class="txt_letra">D</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_D_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_D_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_D_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_D_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_D_incorrecta">
+					</div>
+
+					<div id="letra_E" class="boton_letra" style="top:134px; left:557px;">
+						<div class="txt_letra">E</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_E_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_E_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_E_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_E_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_E_incorrecta">
+					</div>
+
+					<div id="letra_F" class="boton_letra" style="top:191px; left:587px;">
+						<div class="txt_letra">F</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_F_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_F_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_F_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_F_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_F_incorrecta">
+					</div>
+
+					<div id="letra_G" class="boton_letra" style="top:254px; left:603px;">
+						<div class="txt_letra">G</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_G_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_G_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_G_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_G_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_G_incorrecta">
+					</div>
+
+					<div id="letra_H" class="boton_letra" style="top:320px; left:603px;">
+						<div class="txt_letra">H</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_H_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_H_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_H_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_H_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_H_incorrecta">
+					</div>
+
+					<div id="letra_I" class="boton_letra" style="top:384px; left:587px;">
+						<div class="txt_letra">I</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_I_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_I_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_I_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_I_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_I_incorrecta">
+					</div>
+
+					<div id="letra_J" class="boton_letra" style="top:442px; left:554px;">
+						<div class="txt_letra">J</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_J_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_J_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_J_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_J_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_J_incorrecta">
+					</div>
+
+					<div id="letra_L" class="boton_letra" style="top:491px; left:508px;">
+						<div class="txt_letra">L</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_L_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_L_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_L_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_L_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_L_incorrecta">
+					</div>
+
+					<div id="letra_M" class="boton_letra" style="top:527px; left:451px;">
+						<div class="txt_letra">M</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_M_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_M_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_M_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_M_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_M_incorrecta">
+					</div>
+
+					<div id="letra_N" class="boton_letra" style="top:548px; left:385px;">
+						<div class="txt_letra">N</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_N_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_N_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_N_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_N_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_N_incorrecta">
+					</div>
+
+					<div id="letra_Ñ" class="boton_letra" style="top:550px; left:316px;">
+						<div class="txt_letra">Ñ</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_Ñ_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_Ñ_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_Ñ_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_Ñ_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_Ñ_incorrecta">
+					</div>
+
+					<div id="letra_O" class="boton_letra" style="top:535px; left:250px;">
+						<div class="txt_letra">O</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_O_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_O_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_O_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_O_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_O_incorrecta">
+					</div>
+
+					<div id="letra_P" class="boton_letra" style="top:504px; left:189px;">
+						<div class="txt_letra">P</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_P_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_P_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_P_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_P_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_P_incorrecta">
+					</div>
+
+					<div id="letra_Q" class="boton_letra" style="top:458px; left:140px;">
+						<div class="txt_letra">Q</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_Q_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_Q_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_Q_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_Q_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_Q_incorrecta">
+					</div>
+
+					<div id="letra_R" class="boton_letra" style="top:403px; left:102px;">
+						<div class="txt_letra">R</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_R_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_R_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_R_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_R_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_R_incorrecta">
+					</div>
+
+					<div id="letra_S" class="boton_letra" style="top:341px; left:79px;">
+						<div class="txt_letra">S</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_S_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_S_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_S_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_S_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_S_incorrecta">
+					</div>
+
+					<div id="letra_T" class="boton_letra" style="top:275px; left:72px;">
+						<div class="txt_letra">T</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_T_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_T_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_T_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_T_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_T_incorrecta">
+					</div>
+
+					<div id="letra_U" class="boton_letra" style="top:210px; left:83px;">
+						<div class="txt_letra">U</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_U_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_U_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_U_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_U_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_U_incorrecta">
+					</div>
+
+					<div id="letra_V" class="boton_letra" style="top:150px; left:111px;">
+						<div class="txt_letra">V</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_V_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_V_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_V_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_V_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_V_incorrecta">
+					</div>
+
+					<div id="letra_X" class="boton_letra" style="top:98px; left:151px;">
+						<div class="txt_letra">X</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_X_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_X_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_X_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_X_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_X_incorrecta">
+					</div>
+
+					<div id="letra_Y" class="boton_letra" style="top:58px; left:205px;">
+						<div class="txt_letra">Y</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_Y_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_Y_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_Y_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_Y_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_Y_incorrecta">
+					</div>
+
+					<div id="letra_Z" class="boton_letra" style="top:31px; left:268px;">
+						<div class="txt_letra">Z</div>
+						<img src="images/letra_inactiva.png" alt="" class="letra_inactiva" id="letra_Z_inactiva">
+						<img src="images/letra_activa.png" alt="" class="letra_activa oculto" id="letra_Z_activa">
+						<img src="images/letra_espera.png" alt="" class="letra_espera oculto" id="letra_Z_espera">
+						<img src="images/letra_correcta.png" alt="" class="letra_correcta oculto" id="letra_Z_correcta">
+						<img src="images/letra_incorrecta.png" alt="" class="letra_incorrecta oculto" id="letra_Z_incorrecta">
+					</div>
+
+				</div>
+			</div>
+
+
+	
+		</div>
+
+
+	</body>
+
+
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/anime.min.js"></script>
+	<script type="text/javascript" src="js/soundjs-0.6.2.min.js"></script>
+	<script type="text/javascript" src="js/palabras.js"></script>
+	<!--<script type="text/javascript" src="js/control.js"></script>-->
+	<script type="text/javascript" src="js/funciones.js"></script>
+
+
+
+</html>
